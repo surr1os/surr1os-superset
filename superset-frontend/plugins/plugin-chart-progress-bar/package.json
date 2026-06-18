@@ -1,0 +1,11 @@
+{
+  "name": "@superset-ui/plugin-chart-progress-bar",
+  "version": "0.1.0",
+  "description": "Progress Bar Chart for Superset",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@superset-ui/core": "*",
+    "@superset-ui/chart-controls": "*",
+    "react": "^17.0.0"
+  }
+}
