@@ -1,0 +1,19 @@
+{
+  "name": "@superset-ui/plugin-chart-equipment-card",
+  "version": "1.0.0",
+  "description": "Equipment status card with progress bar",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "styled-components": "^5.0.0",
+    "@superset-ui/core": "*",
+    "@superset-ui/chart-controls": "*"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "@types/react": "^17.0.0"
+  }
+}

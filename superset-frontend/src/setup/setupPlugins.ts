@@ -24,6 +24,7 @@ import { registerChartStateConverter } from '../dashboard/util/chartStateConvert
 import ProgressBarPlugin from '../../plugins/plugin-chart-progress-bar/src';
 
 import Separator from '../explore/controlPanels/Separator';
+import EquipmentCardPlugin from 'plugins/plugin-equipment-card/src';
 
 export default function setupPlugins() {
   new MainPreset().register();
@@ -31,6 +32,7 @@ export default function setupPlugins() {
   // TODO: Remove these shims once the control panel configs are moved into the plugin package.
   getChartControlPanelRegistry().registerValue('separator', Separator);
   new ProgressBarPlugin().configure({ key: 'progress-bar' }).register();
+  new EquipmentCardPlugin().configure({key: 'equipment-card'}).register();
   // Register chart state converters for stateful charts
   registerChartStateConverter('ag-grid-table', convertAgGridStateToOwnState);
 

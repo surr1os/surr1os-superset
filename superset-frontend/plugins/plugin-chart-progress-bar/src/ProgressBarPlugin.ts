@@ -152,19 +152,6 @@ export default class ProgressBarPlugin extends ChartPlugin {
 
         // ── Значение факта ─────────────────────────────────────────────────
         const factValue = findValue(rows, factKeys);
-
-        // ── ЛОГ ───────────────────────────────────────────────────────────
-        console.group('%c[ProgressBar] transformProps', 'color:#f97316;font-weight:bold');
-        console.log('metric (raw):', formData.metric);
-        console.log('metric_2 (raw):', formData.metric_2);
-        console.log('planRawMetric:', planRawMetric);
-        console.log('factKeys:', factKeys);
-        console.log('planKeys:', planKeys);
-        console.log('planKeyUsed:', planKeyUsed);
-        console.log('rows[0]:', rows[0]);
-        console.log('factValue:', factValue, '| planValue:', planValue);
-        console.groupEnd();
-
         return {
           factValue,
           planValue,
